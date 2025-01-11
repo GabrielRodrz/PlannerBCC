@@ -67,7 +67,7 @@ header {
     font-weight: bold;
     color: #FFFFFF;
     margin: 10px 0;
-    max-height: 2400px; 
+    max-height: 50px; 
     overflow: hidden;
     transition: max-height 0.7s ease; 
 }
