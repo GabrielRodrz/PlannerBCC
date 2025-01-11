@@ -50,7 +50,7 @@ header {
     box-sizing: border-box;
     font-size: 14px;
     color: #333;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
     max-height: 180px; 
     overflow: hidden;
     cursor: pointer; 
@@ -69,7 +69,7 @@ header {
     margin: 10px 0;
     max-height: 50px; 
     overflow: hidden;
-    transition: max-height 0.3s ease; 
+    transition: max-height 0.7s ease; 
 }
 
 .card .deadline {
@@ -78,21 +78,20 @@ header {
 }
 
 .card.expand {
-    max-height: 500px; 
+    max-height: 2400px; 
 }
 
 .card.expand .description {
-    max-height: 200px; 
+    max-height: 2400px; 
 }
 
 .card.prazo-encerrado {
     background-color: #FF5733; 
     color: #FFFFFF; 
 }
-
 .materias:hover,
 .card:hover {
     background: #FF9800; 
     color: #121212; 
-    transition: all 0.3s ease; 
+    transition: all 0.7s ease; 
 }
