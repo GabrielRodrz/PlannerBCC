@@ -89,3 +89,10 @@ header {
     background-color: #FF5733; 
     color: #FFFFFF; 
 }
+
+.materias:hover,
+.card:hover {
+    background: #FF9800; 
+    color: #121212; 
+    transition: all 0.3s ease; 
+}
