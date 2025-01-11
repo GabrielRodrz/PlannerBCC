@@ -1,3 +1,4 @@
+/* Configurações gerais */
 body {
     background-color: #121212;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,6 +21,7 @@ header {
     align-items: flex-start;
     gap: 15px;
     margin-top: 10px;
+    flex-wrap: wrap; /* Permite que as colunas se ajustem em telas menores */
 }
 
 .coluna {
@@ -28,6 +30,7 @@ header {
     align-items: center;
     flex: 1;
     gap: 10px;
+    min-width: 250px; /* Define um tamanho mínimo para as colunas */
 }
 
 .materias {
@@ -89,9 +92,59 @@ header {
     background-color: #FF5733; 
     color: #FFFFFF; 
 }
+
 .materias:hover,
 .card:hover {
     background: #FF9800; 
     color: #121212; 
     transition: all 0.7s ease; 
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    header {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .linha-materias {
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+    .coluna {
+        align-items: stretch; 
+    }
+
+    .card {
+        font-size: 12px; 
+        padding: 10px; 
+    }
+
+    .card .description {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 20px; 
+    }
+
+    .materias {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .card {
+        padding: 8px; 
+        font-size: 10px;
+    }
+
+    .card .description {
+        font-size: 12px; 
+    }
 }
