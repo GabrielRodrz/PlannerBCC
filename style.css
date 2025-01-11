@@ -1,0 +1,91 @@
+body {
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+    background: #1F1F1F;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.linha-materias {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+}
+
+.materias {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background: #2C2C2C;
+    color: #E0E0E0;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+    background: #3A3A3A;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+    max-height: 180px; 
+    overflow: hidden;
+    cursor: pointer; 
+}
+
+.card .title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #B3B3B3;
+}
+
+.card .description {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 10px 0;
+    max-height: 50px; 
+    overflow: hidden;
+    transition: max-height 0.3s ease; 
+}
+
+.card .deadline {
+    font-size: 12px;
+    color: #AAAAAA;
+}
+
+.card.expand {
+    max-height: 500px; 
+}
+
+.card.expand .description {
+    max-height: 200px; 
+}
+
+.card.prazo-encerrado {
+    background-color: #FF5733; 
+    color: #FFFFFF; 
+}

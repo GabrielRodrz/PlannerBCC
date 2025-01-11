@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCC-ATV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>ATIVIDADES</header>
+    <div class="linha-materias">
+        <div class="coluna">
+            <div class="materias">Cálc. Integ II</div>
+            <div class="card" onclick="toggleCardInfo(this)">
+                <div class="title">Atividade 1</div>
+                <div class="description" id="desc-1">Descrição da atividade a ser desenvolvida. Esta descrição pode ser longa, mas vamos limitar o seu tamanho e mostrar mais ao clicar.</div>
+                <div class="deadline" data-deadline="2025-01-11">Data de Entrega: 10/01/2025</div>
+            </div>
+            <div class="card" onclick="toggleCardInfo(this)">
+                <div class="title">Atividade 2</div>
+                <div class="description" id="desc-2">Descrição curta.</div>
+                <div class="deadline" data-deadline="2025-01-12">Data de Entrega: 11/01/2025</div>
+            </div>
+        </div>
+        <div class="coluna">
+            <div class="materias">Álgebra Linear</div>
+            <div class="card" onclick="toggleCardInfo(this)">
+                <div class="title">Atividade 1</div>
+                <div class="description" id="desc-3">Descrição da atividade a ser desenvolvida.</div>
+                <div class="deadline" data-deadline="2025-01-13">Data de Entrega: 12/01/2025</div>
+            </div>
+            <div class="card" onclick="toggleCardInfo(this)">
+                <div class="title">Atividade 2</div>
+                <div class="description" id="desc-3">Descrição da atividade a ser desenvolvida.</div>
+                <div class="deadline" data-deadline="2025-01-10">Data de Entrega: 09/01/2025</div>
+            </div>
+        </div>
+        <div class="coluna">
+            <div class="materias">Banco de Dados</div>
+            <div class="card" onclick="toggleCardInfo(this)">
+                <div class="title">Atividade 1</div>
+                <div class="description" id="desc-4">Descrição da atividade a ser desenvolvida.</div>
+                <div class="deadline" data-deadline="2025-01-12">Data de Entrega: 12/01/2025</div>
+            </div>
+        </div>
+        <div class="coluna">
+            <div class="materias">Eng. Software</div>
+            <div class="card" onclick="toggleCardInfo(this)">
+                <div class="title">Atividade 1</div>
+                <div class="description" id="desc-5">Descrição da atividade a ser desenvolvida.</div>
+                <div class="deadline" data-deadline="2025-01-13">Data de Entrega: 13/01/2025</div>
+            </div>
+        </div>
+        <div class="coluna">
+            <div class="materias">Int. Teo. Grafos</div>
+            <div class="card" onclick="toggleCardInfo(this)">
+                <div class="title">Atividade 1</div>
+                <div class="description" id="desc-6">Descrição da atividade a ser desenvolvida.</div>
+                <div class="deadline" data-deadline="2025-01-10">Data de Entrega: 09/01/2025</div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
