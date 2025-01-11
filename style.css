@@ -99,7 +99,6 @@ header {
     transition: all 0.7s ease; 
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     body {
         margin: 10px;
