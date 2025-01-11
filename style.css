@@ -1,5 +1,7 @@
+/* Tema Escuro (padrão) */
 body {
     background-color: #121212;
+    color: #E0E0E0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
 }
@@ -51,11 +53,11 @@ header {
     width: 100%;
     box-sizing: border-box;
     font-size: 14px;
-    color: #333;
+    color: #FFFFFF;
     transition: all 0.7s ease;
-    max-height: 180px; 
+    max-height: 180px;
     overflow: hidden;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .card .title {
@@ -69,9 +71,9 @@ header {
     font-weight: bold;
     color: #FFFFFF;
     margin: 10px 0;
-    max-height: 51px; 
+    max-height: 51px;
     overflow: hidden;
-    transition: max-height 0.7s ease; 
+    transition: max-height 0.7s ease;
 }
 
 .card .deadline {
@@ -80,23 +82,71 @@ header {
 }
 
 .card.expand {
-    max-height: 2400px; 
+    max-height: 2400px;
 }
 
 .card.expand .description {
-    max-height: 2400px; 
+    max-height: 2400px;
 }
 
 .card.prazo-encerrado {
-    background-color: #FF5733; 
-    color: #FFFFFF; 
+    background-color: #FF5733;
+    color: #FFFFFF;
 }
 
 .materias:hover,
 .card:hover {
-    background: #FF9800; 
-    color: #121212; 
-    transition: all 0.7s ease; 
+    background: #FF9800;
+    color: #121212;
+    transition: all 0.7s ease;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #FAFAFA;
+        color: #333333;
+    }
+
+    header {
+        background: #e2e2e2; 
+        color: #333333; 
+    }
+
+    .materias {
+        background: #e2e2e2; 
+        color: #333333; 
+        
+    }
+
+    .card {
+        background: #e2e2e2; 
+        color: #333333; 
+        
+    }
+
+    .card .title {
+        color: #333333; 
+    }
+
+    .card .deadline {
+        color: #333333; 
+    }
+
+    .card .description {
+        color: #333333; 
+    }
+
+    .card.prazo-encerrado {
+        background-color: #FF5733;
+        color: #FFFFFF;
+    }
+
+    .materias:hover,
+    .card:hover {
+        background: #FFD54F; 
+        color: #121212; 
+        
+    }
 }
 
 @media (max-width: 768px) {
@@ -111,51 +161,51 @@ header {
 
     .linha-materias {
         flex-direction: column;
-        gap: 20px; 
+        gap: 20px;
     }
 
     .coluna {
-        align-items: stretch; 
+        align-items: stretch;
     }
 
     .card {
-        font-size: 12px; 
-        padding: 10px; 
+        font-size: 12px;
+        padding: 10px;
     }
 
     .card .description {
-        font-size: 14px; 
+        font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
     header {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     .linha-materias {
         flex-direction: column;
         align-items: stretch;
-        gap: 20px; 
+        gap: 20px;
     }
 
     .materias {
         font-size: 12px;
         padding: 8px;
-        width: 100%; 
+        width: 100%;
     }
 
     .coluna {
-        width: 100%; 
+        width: 100%;
     }
 
     .card {
-        padding: 8px; 
+        padding: 8px;
         font-size: 10px;
-        width: 100%; 
+        width: 100%;
     }
 
     .card .description {
-        font-size: 12px; 
+        font-size: 12px;
     }
 }
